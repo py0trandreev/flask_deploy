@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css"
+      href="{{ url_for('static', filename='styles/main.css') }}">
+{% endblock style %}
+
+{% block content %}
+<div class="container" style="margin: 12rem 4rem; text-align: center;">
+    <div class="heading">
+        <h1>ДОБРО ПОЖАЛОВАТЬ, В МОЙ БЛОГ!</h1>
+    </div>
+    <hr class="w3-border-grey" style="margin:auto; width:40%;">
+    <br>
+    <div class="content-body">
+        <p class="card-text" id="para2">
+            Всё, что происходит однажды, может никогда больше не повториться.
+            Но всё, что происходит дважды, несомненно, произойдёт и в третий
+            раз.</p>
+        <p>
+            «Пауло Коэльо»
+        </p>
+    </div>
+    <br>
+
+
+    <!-- <div class="card" style="border-bottom-left-radius: 50px; border-top-right-radius: 50px; background-color:  #2ec4b6; box-shadow: 10px 15px 10px lightslategray;">
+        <div class="card-body" style="color: white;">
+            <br>
+        </div>
+    </div> -->
+</div>
+{% endblock content %}
